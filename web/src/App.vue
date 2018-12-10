@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <HeaderNav/> dont know how you want this to look yet, did some basic work, on flexing the content-->
+    <PostFeed :FeedData="feed"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HeaderNav from "./components/HeaderNav.vue";
+import PostFeed from "./components/PostFeed.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    // HeaderNav,
+    PostFeed
   }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 </style>
